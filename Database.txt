@@ -1,0 +1,92 @@
+CREATE TABLE Student (
+student_no int(7) NOT NULL,
+first_name varchar(20) NOT NULL,
+last_name varchar(20) NOT NULL,
+birth_date date NOT NULL,
+gender enum ('Male', 'Female') NOT NULL,
+mobile varchar(15) NOT NULL,
+address varchar(50) NOT NULL,
+major enum ('Computer Science', 'Business', 'Journalism', 'Art') NOT NULL,
+study_mode enum('Full-Time', 'Part-Time') NOT NUll,
+course enum('BA', 'BSC', 'BSC(HONS)', 'MSC', 'PGD') NOT NULL,
+start_date date NOT NULL,
+end_date date NOT NULL,
+PRIMARY KEY (student_no)
+);
+
+CREATE TABLE member (
+username varchar(10) NOT NULL,
+first_name varchar(20) NOT NULL,
+last_name varchar(20) NOT NULL,
+birth_date date NOT NULL,
+gender enum ('Male', 'Female') NOT NULL,
+email varchar(35) NOT NULL,
+mobile varchar(15) NOT NULL,
+address varchar(50) NOT NULL,
+password varchar(20) NOT NULL,
+member enum('Member','Admin') NOT NULL,
+PRIMARY KEY (username)
+);
+
+CREATE TABLE Contact (
+email varchar(35) NOT NULL,
+first_name varchar(20) NOT NULL,
+mobile varchar(15) NOT NULL,
+message varchar(200),
+PRIMARY KEY (email)
+);
+
+CREATE TABLE Course_register (
+email varchar(35) NOT NULL,
+first_name varchar(20) NOT NULL,
+course enum ('FITNESS STUDIO', 'LES MILLS CLASSES', 'IMMERSIVE CLASSES', 'GRAVITY CLASSES', 'TEEN CLASSES', 'POOL CLASSES', 'VIRTUAL CLASSES') NOT NULL,
+type enum ('Kids', 'Teen', 'Adult') NOT NULL,
+PRIMARY KEY (email)
+);
+
+CREATE TABLE Testimonial_table (
+email varchar(35) NOT NULL,
+name varchar(20) NOT NULL,
+class varchar(25) NOT NULL,
+message varchar(1000),
+date date,
+status enum ('Approved','Not Approved'),
+PRIMARY KEY (email)
+);
+
+CREATE TABLE Fees_table (
+title varchar(35) NOT NULL,
+Rfees varchar(5) NOT NULL,
+Mfees varchar(5) NOT NULL,
+PRIMARY KEY (title)
+);
+
+CREATE TABLE Feature (
+title varchar(35) NOT NULL,
+feature varchar(15) NOT NULL,
+image varchar(25) Not NULL,
+link varchar(75) NOT NULL,
+line1 varchar(75) NOT NULL,
+line2 varchar(75) NOT NULL,
+line3 varchar(75) NOT NULL,
+line4 varchar(75),
+PRIMARY KEY (title)
+);
+
+CREATE TABLE Class(
+title varchar(35) NOT NULL,
+image varchar(15) NOT NULL,
+link varchar(50) NOT NULL,
+paragraph text NOT NULL,
+PRIMARY KEY (title)
+);
+
+CREATE TABLE Class_table(
+title varchar(50) NOT NULL,
+image varchar(35) NOT NULL,
+image2 varchar(35),
+link varchar(75),
+paragraph text NOT NULL,
+PRIMARY KEY (title)
+);
+
