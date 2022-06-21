@@ -1,0 +1,100 @@
+
+			.login-page{
+				float:right;
+				padding-right:5rem;
+			}
+			.login-page a{
+				text-decoration:none;
+				font-size:1.2rem;
+				color:#000080;
+			}
+			#navbar{
+				background-color:#ffffff;
+			} 
+			nav ul{
+				display:flex;
+				padding-left:11rem;
+			}
+			#navbar h1{
+				text-align:center;
+				padding-bottom:1.1rem;
+				font-size:2rem;
+				
+			}
+			nav ul li{
+				display:block;
+				padding:2%;
+				font-size:1.5rem;
+			}
+			nav ul li a{
+				color:#000080;
+				text-align:center;
+				text-decoration:none;
+			}
+
+			#navbar img{
+				display:flex;
+				position:absolute;
+				padding-right:1rem;
+			}	
+			#navbar a{
+				text-align:right;
+			}
+			#content{
+				width:75%;
+				margin:auto;
+				padding:3rem;
+			} 
+
+#content h1{
+	text-align:center;
+}
+
+#content p{
+	font-size:1.2rem;
+}
+
+.basic-info{
+	color:#000000;
+	font-family: Helvetica;
+				
+}
+						
+.feature1{
+	border-style: solid;
+	padding:2rem;
+	font-size:1.2rem;
+}
+.feature1 a{
+	text-decoration:none;
+}
+.feature1 img{
+	float:right;
+}
+			
+.clearfix {
+	overflow: auto;
+}
+@media screen and (max-width:675px){
+	footer{
+		width:100%;
+		float:none;
+		overflow:hidden;
+	}
+
+
+}
+@media screen and (max-width: 850px ){
+	footer{
+		width:100%;
+	}
+
+}
+
+@media screen and (max-width: 1000px ){
+	
+	footer{
+		width:100%;
+	}
+}
+

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang=''>
+<head>
+   <meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="styles.css">
+   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<link href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" rel="stylesheet">
+   <title>Brainstorm</title>
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+
+</head>
+<style>
+.headings{
+display:flex;
+justify-content:space-between;
+}
+.headings span{
+padding-top:10px;
+font-size:2.4rem;
+font-family: 'Trocchi', serif;
+letter-spacing: 5px;
+color:#990099;
+}
+</style>
+<body>
+<div class = "headings">
+		
+	<a href = "index.php"><img src ="images/logo.JPG" alt = "logo" title = "home" width = "105" height = "75"></a>
+<span><strong>BRAINSTORM GYM</strong></span>	
+	<div class = "login-page"> 
+		<a href = "logout.php" class="btn btn-info btn-lg">
+        Logout 
+        </a>
+	</div>
+
+</div>
+<!-- header -->
+	<div id='cssmenu'>
+		<ul>
+		   <li class='active has-sub'><a href='index.php'><span>Home</span></a>
+		     <ul>
+				 <li class='has-sub'><a href='index_edit.php'><span>Home Edit</span></a></li>
+			 </ul>
+		   </li>
+		   <li class='active has-sub'><a href='registration.php'><span>Registration</span></a>
+			  <ul>
+				 <li class='has-sub'><a href='registration.php'><span>Membership</span></a></li>
+				 <li class='has-sub'><a href='registration.php'><span>Benefits And Fees</span></a></li>
+				 <li class='has-sub'><a href='register_course.php'><span>Register Course</span></a></li>
+				 <li class='has-sub'><a href='registration_edit.php'><span>Registration Edit</span></a></li>
+				</ul>
+		   </li>
+		  <li class='active has-sub'><a href='class.php'><span>Class</span></a>
+			<ul>
+				 <li class='has-sub'><a href='class.php'><span>Class</span></a></li>
+				 <li class='has-sub'><a href='kids.php'><span>Kids Class</span></a></li>
+				 <li class='has-sub'><a href='class_details.php'><span>General Class</span></a></li>
+				 <li class='has-sub'><a href='class_details_edit.php'><span>Class Edit</span></a></li>
+			</ul>
+		  </li>
+		   <li class='active has-sub'><a href='testimonial1.php'><span>Testimonial</span></a>
+		   	<ul>
+				 <li class='has-sub'><a href='testimonial1.php'><span>Testimonials</span></a></li>
+				 <li class='has-sub'><a href='testimonial_add.php'><span>Your Testimonial</span></a></li>
+				 <li class='has-sub'><a href='testimonial_manage.php'><span>Testimonial Edit</span></a></li>
+			</ul>
+		   </li>
+		   <li class='has-sub'><a href='contact_us.php'><span>Contact Us</span></a>
+		 	<ul>
+				 <li class='has-sub'><a href='contact_us.php'><span>Contact Us</span></a></li>
+				 <li class='has-sub'><a href='contact_us_manage.php'><span>Contact Edit</span></a></li>
+			</ul>
+		   </li>
+		</ul>
+	</div>	
+</body>
+</html>
